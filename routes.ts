@@ -15,4 +15,4 @@ export const authRoutes = [
 
 export const apiAuthPrefix = "/api/auth"
 export const loginRoute = "/auth/login"
-export const default_login_redirect = "/settings"
+export const default_login_redirect = "/server"

@@ -1,10 +1,18 @@
 "use server"
 
 import { db } from "./db"
+import { currentUser } from "./reuse/currentUser"
 
 
 export const usersGet = async () => {
-    const users = await db.user.findMany({})
+
+    const user = await currentUser()
+
+    if (!user) {
+        return { users: [] }
+    }
+
+    const users = await db.user.findMany({ where: { id: { not: user.id } } })
 
     return { users: users }
 }
