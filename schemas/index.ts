@@ -17,6 +17,7 @@ export const updateUserSchema = z.object({
     return true;
 }, { message: "Please enter password and new password.", path: ["password", "newPassword"] })
 
+
 export const LoginSchema = z.object({
     email: z.string().min(6, { message: 'minimum enter 6 characters.' }).email({ message: "Email is required" }),
     password: z.string().min(1, { message: "Password is required" }),

@@ -33,7 +33,7 @@ export default function Page() {
             <br />
             {
                 !success && !error &&
-                <SyncLoader color='white' className='' />
+                <SyncLoader color='black' className='' />
             }
             <FormError message={error} />
             <FormSuccess message={success} />

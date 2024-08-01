@@ -26,8 +26,8 @@ export default function UserButton() {
                 </Avatar>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-                <DropdownMenuItem className=' font-medium cursor-pointer'>Profile</DropdownMenuItem>
-                <DropdownMenuItem className=' font-medium cursor-pointer'>Settings</DropdownMenuItem>
+                {/* <DropdownMenuItem className=' font-medium cursor-pointer'>Profile</DropdownMenuItem>
+                <DropdownMenuItem className=' font-medium cursor-pointer'>Settings</DropdownMenuItem> */}
                 <DropdownMenuItem className=' font-medium cursor-pointer' onClick={async () => await logout()}>Logout</DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

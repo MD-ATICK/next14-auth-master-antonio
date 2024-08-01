@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function BoxCard({ children, header, title, backBtnText, backBtnLink }: { children: React.ReactNode, header?: string, title?: string, backBtnLink?: string, backBtnText?: string, }) {
     return (
-        <div className='w-[90vw]  sm:w-[450px] rounded-2xl shadow-lg p-8 bg-white border-b-2 border-r-2 border-sky-600 flex justify-center items-center flex-col text-black font-medium'>
+        <div className='w-[90vw]  sm:w-[450px] rounded-2xl shadow-lg p-4 sm:p-8 bg-white border-b-2 border-r-2 border-sky-600 flex justify-center items-center flex-col text-black font-medium'>
             {header && <div className='flex items-center gap-3'>
                 <Image src={lock} height={40} width={40} alt='lock' />
                 <h1 className=' font-bold  text-3xl'>{header}</h1>
